@@ -69,10 +69,6 @@
     }
 }
 
-.myexp {
- 
-
-}
 .competences {
     background-color: variable.$color-primary;
     border-radius: 55px;
@@ -80,13 +76,20 @@
     justify-content: space-around;
     width: 100%;
     padding: 2rem;
-    
-
-
-
     li {
         margin-bottom: 3rem;
     }
+}
+.caroussel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
 }
 .atouts {
 
@@ -97,6 +100,7 @@
 }
 .experiences {
     flex-wrap: wrap;
+
     ul{
         columns: 2;
 
@@ -106,20 +110,25 @@
 .cartes {
     background-color: variable.$color-thirdary;
     border-radius: 55px;
-    width: 50%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
     text-align: center;
+    color: variable.$color-black;
+    font-family: "montserrat extrabold";
+    flex: 0 0 100%; 
     .img-cartes {
         width: 100%;
         display: flex;
         flex-wrap:wrap;
         justify-content: center;
+
         
         img {
             width: 30%;
+            margin-bottom: 4rem;
+            margin-right: 0.5rem;
         }
     }
 }
