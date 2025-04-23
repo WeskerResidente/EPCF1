@@ -6,6 +6,7 @@
     justify-content: center;
     padding-top: 15rem;
     padding-bottom: 15rem;
+    background-repeat: no-repeat;
     .name{
         display: flex;
         flex-direction: column;
@@ -19,18 +20,38 @@
         display: flex;
         justify-content: space-around;
         margin-top: 2rem;
+        .img-picture {
+            width: 100%;
+        }
         p{
             width: 50%;
             margin-top: 4rem;
         }
     }
 }
+.stats-container {
+        background-color: variable.$color-primary;
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        margin-top: 4rem;
+}
 .stats {
     display: flex;
     justify-content: space-around;
+    background-color: variable.$color-thirdary;
+    width: 80%;
+    border-radius: 24px;
+    padding-bottom: 2rem;
+    p {
+        color: variable.$color-black;
+        font-family: "montserrat bold" ;
+        font-size: larger;
+    }
     .allStats {
         text-align: center;
-        padding-top: 3rem;
+        padding-top: 3.5rem;
         font-family: "montserrat bold" ;
     }
 }
@@ -43,14 +64,62 @@
     align-items: center;
 
     .number {
-        margin-top: 3rem;
+        margin-top: 3.7rem;
         margin-left: 1rem;
     }
+}
+
+.myexp {
+ 
+
+}
+.competences {
+    background-color: variable.$color-primary;
+    border-radius: 55px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem;
     
-    p {
-        color: variable.$color-black;
-        font-family: "montserrat bold" ;
-        
+
+
+
+    li {
+        margin-bottom: 3rem;
+    }
+}
+.atouts {
+
+    height: 100%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+.experiences {
+    flex-wrap: wrap;
+    ul{
+        columns: 2;
+
     }
 
+}
+.cartes {
+    background-color: variable.$color-thirdary;
+    border-radius: 55px;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    .img-cartes {
+        width: 100%;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        
+        img {
+            width: 30%;
+        }
+    }
 }

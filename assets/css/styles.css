@@ -86,7 +86,7 @@ h2 {
 
 h3 {
   font-family: "montserrat extrabold";
-  color: #EBEFF3;
+  color: #1A1423;
   font-size: 1.8rem;
 }
 
@@ -106,7 +106,6 @@ h4 {
 }
 
 img {
-  height: 100%;
   object-fit: cover;
 }
 
@@ -138,12 +137,17 @@ a {
   color: #1A1423;
 }
 
+h2 {
+  text-align: center;
+}
+
 .bg-name {
   background: url(/assets/img/image\ de\ fond.png);
   display: flex;
   justify-content: center;
   padding-top: 15rem;
   padding-bottom: 15rem;
+  background-repeat: no-repeat;
 }
 .bg-name .name {
   display: flex;
@@ -160,18 +164,39 @@ a {
   justify-content: space-around;
   margin-top: 2rem;
 }
+.presentation .presentation-main .img-picture {
+  width: 100%;
+}
 .presentation .presentation-main p {
   width: 50%;
+  margin-top: 4rem;
+}
+
+.stats-container {
+  background-color: #399BF7;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   margin-top: 4rem;
 }
 
 .stats {
   display: flex;
   justify-content: space-around;
+  background-color: #EBEFF3;
+  width: 80%;
+  border-radius: 24px;
+  padding-bottom: 2rem;
+}
+.stats p {
+  color: #1A1423;
+  font-family: "montserrat bold";
+  font-size: larger;
 }
 .stats .allStats {
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 3.5rem;
   font-family: "montserrat bold";
 }
 
@@ -185,12 +210,54 @@ a {
   align-items: center;
 }
 .stat .number {
-  margin-top: 3rem;
+  margin-top: 3.7rem;
   margin-left: 1rem;
 }
-.stat p {
-  color: #1A1423;
-  font-family: "montserrat bold";
+
+.competences {
+  background-color: #399BF7;
+  border-radius: 55px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 2rem;
+}
+.competences li {
+  margin-bottom: 3rem;
+}
+
+.atouts {
+  height: 100%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.experiences {
+  flex-wrap: wrap;
+}
+.experiences ul {
+  columns: 2;
+}
+
+.cartes {
+  background-color: #EBEFF3;
+  border-radius: 55px;
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.cartes .img-cartes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cartes .img-cartes img {
+  width: 30%;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  // on prend tous les éléments .stat
   const stats = document.querySelectorAll('.stats .stat');
 
   stats.forEach(stat => {

@@ -31,7 +31,7 @@ h2 {
 
 h3 {
     font-family: variable.$font-h3;
-    color: variable.$color-white;
+    color: variable.$color-black;
     font-size: 1.8rem;
 };
 
@@ -51,7 +51,6 @@ h4 {
 };
 
 img {
-    height: 100%;
     object-fit: cover;
 };
 p {
