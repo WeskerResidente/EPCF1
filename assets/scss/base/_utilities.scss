@@ -1,4 +1,22 @@
+@use "../abstracts/variables" as variable;
+
 .container {
     width: 80%;
     margin: 0 auto;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.h2-inMain {
+    color: variable.$color-black;
+    text-align: center;
+}
+.fa-solid {
+    color: variable.$color-black;
 }

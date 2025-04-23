@@ -1,1 +1,27 @@
 @use "../abstracts/variables" as variable;
+
+header{
+    background-color: variable.$color-primary;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        align-items: center;
+        li {
+            font-family:"montserrat bold" ; 
+            color: variable.$color-white;
+            margin-right: 1rem;
+        }
+    }
+}
+.logo {
+    img{
+        width: 50%;
+    }
+}

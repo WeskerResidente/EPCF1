@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as variable;
+
+.bg-name{
+    background: url(/assets/img/image\ de\ fond.png);
+    display: flex;
+    justify-content: center;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    .name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+.presentation {
+    margin-top: 4rem;
+    .presentation-main {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+        p{
+            width: 50%;
+            margin-top: 4rem;
+        }
+    }
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    .allStats {
+        text-align: center;
+        padding-top: 3rem;
+        font-family: "montserrat bold" ;
+    }
+}
+.label {
+    margin-left: -1.5rem;
+    text-align: center;
+}
+.stat {
+    display: flex;
+    align-items: center;
+
+    .number {
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    
+    p {
+        color: variable.$color-black;
+        font-family: "montserrat bold" ;
+        
+    }
+
+}
