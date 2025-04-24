@@ -247,3 +247,14 @@
 .Jeux-de-Sociétes::before {
     background: url("/assets/img/bdjsIbjkldje44758gg382g_1920x700.jpg")center /cover no-repeat;
 }
+.Portfolio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 10%;
+        margin-bottom: 4rem;
+        margin-right: 0.5rem;
+        object-fit: contain;
+    }
+}
