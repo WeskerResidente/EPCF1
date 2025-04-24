@@ -247,14 +247,35 @@
 .Jeux-de-Sociétes::before {
     background: url("/assets/img/bdjsIbjkldje44758gg382g_1920x700.jpg")center /cover no-repeat;
 }
+.profolio-en-tete {
+    text-align: center;
+    color: variable.$color-black;
+}
 .Portfolio {
     width: 100%;
     display: flex;
-    justify-content: center;
-    img {
-        width: 10%;
-        margin-bottom: 4rem;
-        margin-right: 0.5rem;
-        object-fit: contain;
+
+    .Portfolio-media {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .profolio-texte {
+        width: 50%;
+        text-align: center;
+    }
+    .img-portfolio {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 2rem;
+
+        img {
+            width: 15%;
+            margin-left: 3rem;
+            object-fit: contain;
+        }
     }
 }

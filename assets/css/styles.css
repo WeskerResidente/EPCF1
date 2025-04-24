@@ -392,15 +392,34 @@ h2 {
   background: url("/assets/img/bdjsIbjkldje44758gg382g_1920x700.jpg") center/cover no-repeat;
 }
 
+.profolio-en-tete {
+  text-align: center;
+  color: #1A1423;
+}
+
 .Portfolio {
   width: 100%;
   display: flex;
-  justify-content: center;
 }
-.Portfolio img {
-  width: 10%;
-  margin-bottom: 4rem;
-  margin-right: 0.5rem;
+.Portfolio .Portfolio-media {
+  width: 50%;
+}
+.Portfolio .Portfolio-media img {
+  width: 100%;
+}
+.Portfolio .profolio-texte {
+  width: 50%;
+  text-align: center;
+}
+.Portfolio .img-portfolio {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+}
+.Portfolio .img-portfolio img {
+  width: 15%;
+  margin-left: 3rem;
   object-fit: contain;
 }
 
