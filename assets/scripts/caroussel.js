@@ -7,6 +7,6 @@ document.getElementById('next').onclick = () => { idx = (idx + 1) % total; updat
 document.getElementById('prev').onclick = () => { idx = (idx - 1 + total) % total; update(); };
 
 function update() {
-  const w = carousel.clientWidth;            // largeur visible en px
+  const w = carousel.clientWidth;
   slides.style.transform = `translateX(-${idx * w}px)`;
 }

@@ -40,6 +40,7 @@
 }
 .stats {
     display: flex;
+    flex-wrap: wrap;  
     justify-content: space-around;
     background-color: variable.$color-thirdary;
     width: 80%;
@@ -49,11 +50,18 @@
         color: variable.$color-black;
         font-family: "montserrat bold" ;
         font-size: larger;
+        margin: 0.5rem 0 0;
     }
     .allStats {
+        flex: 0 0 22%;   
         text-align: center;
+        margin-bottom: 2rem;
+        display: flex;
         padding-top: 3.5rem;
         font-family: "montserrat bold" ;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 .label {
@@ -278,4 +286,140 @@
             object-fit: contain;
         }
     }
+}
+
+
+@media (max-width: 1000px) {
+  .bg-name {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    .name {
+      padding: 0 1rem;
+    }
+  }
+  .presentation {
+    margin-top: 2rem;
+    .presentation-main {
+      flex-direction: column;
+      align-items: center;
+      .img-picture {
+        width: 80%;
+        margin: 0 auto;
+      }
+      p {
+        width: 100%;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+
+  .stats-container {
+    padding: 3rem 1rem;
+  }
+  .stats {
+    flex-direction: column; 
+    align-items: center;   
+    width: 100%;       
+    
+    .allStats {
+        flex: 0 0 auto; 
+        width: 100%; 
+        margin-bottom: 1.5rem; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+      }
+    p {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+  }
+
+  .competences {
+    flex-direction: column;
+    align-items: center;
+    li {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .caroussel {
+    width: 100%;
+    max-width: none;
+  }
+  .slides {
+    flex-wrap: nowrap;
+  }
+  .controls {
+    top: 45%;
+  }
+
+  .experiences ul {
+    columns: 1;
+  }
+
+  .cartes .img-cartes img {
+    width: 45%;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .media-section {
+    height: auto;               // ajuste la hauteur au contenu texte
+    padding: 2rem 1rem;         // padding interne plus souple
+  }
+  .media-section .content {
+    padding: 1rem;
+    h2 {
+      font-size: 1.5rem;        // titre réduit pour mobile
+    }
+    p {
+      font-size: 1rem;          // texte plus petit et lisible
+      line-height: 1.4;
+      max-width: 90%;           // limite la largeur du texte
+      margin: 0 auto;           // centre horizontalement
+    }
+  }
+    
+
+
+  .Portfolio {
+    flex-direction: column;
+    .Portfolio-media,
+    .profolio-texte {
+      width: 100%;
+    }
+    .img-portfolio img {
+      width: 30%;
+      margin-left: 1rem;
+    }
+  }
+}
+
+
+@media (max-width: 360px) {
+
+  .bg-name {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+
+  .control {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+
+  .stats p {
+    font-size: 0.9rem;
+  }
+  .caroussel {
+    overflow-x: scroll;
+  }
 }

@@ -9,6 +9,9 @@
 </head>
 <body>
     <header>
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <div class="container">
             <div class="flex">
                 <div class="logo">
@@ -314,10 +317,54 @@
               </div>
         </section>
         
-          
+        <script src="/assets/scripts/header.js"></script>
         <script src="/assets/scripts/caroussel.js"></script>
         <script src="/assets/scripts/Stats.js"></script>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer__wrapper container">
+            <div class="contact__wrapper">
+                <div class="contact-us__wrapper">
+                    <h4>CONTACTEZ-MOI</h4>
+                    <p>N’hésitez pas à me contacter, je vous répondrais  dans les plus bref délais.</p>
+                    <div class="contact__phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Tel : 06 35 28 88 46</p>
+                    </div>  
+                    <div class="contact__mail" id="contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>E-mail : Normanbelaid@gmail.com</p>
+                    </div>
+                    <div class="contact__mail" id="contact">
+                        <i class="fa-solid fa-house"></i>
+                        <p>24000 Perigueux</p>
+                    </div>
+                    <div class="contact__reseaux" id="contact-reseaux">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <form id="contactform">
+                    <div class="contact__formulaire">
+                        <input class="form" type="text" placeholder="Nom" required>
+                        <input class="form" type="email" placeholder="Email" required>
+                        <input class="form" type="tel" placeholder="Telephone" required>
+                        <textarea class="form" placeholder="Message" rows="5" required></textarea>
+                        <button type="submit" class="btn submit">Envoyer</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="copy__text">
+                <p>&copy Tous droits réservés - Wesker 2025</p>
+            
+            </div>
+
+        </div>
+        <script src="/assets/scripts/Footer.js"></script>
+    </footer>
 </body>
 </html>
