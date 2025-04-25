@@ -47,6 +47,7 @@ html { scroll-behavior: smooth; }
     width: 80%;
     border-radius: 24px;
     padding-bottom: 2rem;
+
     p {
         color: variable.$color-black;
         font-family: "montserrat bold" ;
@@ -72,7 +73,9 @@ html { scroll-behavior: smooth; }
 .stat {
     display: flex;
     align-items: center;
-
+    i {
+      margin-top: 1.5rem;
+    }
     .number {
         margin-top: 3.7rem;
         margin-left: 1rem;
@@ -328,7 +331,11 @@ html { scroll-behavior: smooth; }
   .stats {
     flex-direction: column; 
     align-items: center;   
-    width: 100%;       
+    width: 100%;  
+    i {
+      margin-top: 0.5rem;
+      font-size: 2rem;
+    }     
     
     .allStats {
         flex: 0 0 auto; 
