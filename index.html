@@ -6,25 +6,27 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="https://kit.fontawesome.com/84a235b10e.js" crossorigin="anonymous"></script>
     <title>Projet EPCF 1</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon-96x96.png" sizes="96x96" />
 </head>
 <body>
     <header>
-        <div class="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="container">
+        <div class="container header">
             <div class="flex">
                 <div class="logo">
                     <img src="/assets/img/logo.png" alt="Logo Wesker">
                 </div>
                 <ul>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Compétence</li></a>
-                    <a href="#"><li>Loisirs et influences</li></a>
-                    <a href="#"><li>Contact</li></a>
+                    <a href="#presentation-a"><li>About</li></a>
+                    <a href="#compétences"><li>Compétence</li></a>
+                    <a href="#Loisirs"><li>Loisirs et influences</li></a>
+                    <a href="#Contact"><li>Contact</li></a>
                 </ul>
             </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
+
     </header>
     <main>
         <section class="bg-name">
@@ -35,14 +37,12 @@
                 <h2>
                     Développeur Web - Full Stack
                 </h2>
-                <div class="btn">
-                    QUI-SUIS JE ?
-                </div>
+                <a href="#presentation-a" class="btn">QUI-SUIS JE ?</a>
             </div>
         </section>
         <section class="container">
-            <div class="presentation">
-                <h2 class="h2-inMain">
+            <div class="presentation" >
+                <h2 id="presentation-a" class="h2-inMain">
                     Présentation
                 </h2>
                 <div class="presentation-main">
@@ -106,8 +106,8 @@
 
         </section>
         <section class="container myexp">
-            <div>
-                <h2>
+            <div class="titre-exp">
+                <h2 id="compétences">
                     Mes compétences
                 </h2>
             </div>
@@ -182,8 +182,8 @@
                 </div>
             </div>
         </section>
-        <section class="Loisirs">
-            <h2>Mes influence et mes Loisirs</h2>
+        <section class="Loisirs" id="Loisirs">
+            <h2>Mes influences et mes Loisirs</h2>
             <div class="media-section jeux-video">
                 <div class="container">
                     <div class="">
@@ -322,7 +322,7 @@
         <script src="/assets/scripts/Stats.js"></script>
     </main>
     <footer>
-        <div class="footer__wrapper container">
+        <div class="footer__wrapper container" id="Contact">
             <div class="contact__wrapper">
                 <div class="contact-us__wrapper">
                     <h4>CONTACTEZ-MOI</h4>

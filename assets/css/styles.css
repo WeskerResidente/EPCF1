@@ -127,36 +127,49 @@ header {
   position: relative;
 }
 
-header .container .flex {
+.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+header .container .flex {
   align-items: center;
   padding: 0.5rem 1rem;
 }
 
+.flex {
+  width: 50%;
+}
+
 .menu-toggle {
-  display: none;
-  position: absolute;
-  top: 3rem;
-  right: 15rem;
+  margin-top: 3rem;
   cursor: pointer;
   font-size: 4rem;
-  color: #EBEFF3;
-  background: none;
-  border: none;
-  z-index: 1001;
 }
 .menu-toggle .fa-solid {
   color: #EBEFF3;
 }
 
 header .container .flex ul {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+header .container .flex ul.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #399BF7;
+  padding: 1rem 0;
+  gap: 1rem;
+  z-index: 1000;
 }
 
 header .container .flex ul a {
@@ -165,26 +178,6 @@ header .container .flex ul a {
   font-family: "montserrat bold";
 }
 
-@media (max-width: 1000px) {
-  .menu-toggle {
-    display: block;
-  }
-  header .container .flex ul {
-    display: none;
-  }
-  header .container .flex ul.open {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #399BF7;
-    padding: 1rem 0;
-    gap: 1rem;
-    z-index: 1000;
-  }
-}
 .btn {
   padding: 16px 0px;
   border-radius: 10px;
@@ -285,6 +278,10 @@ h2 {
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-name {
   background: url(/assets/img/image\ de\ fond.png) center/cover no-repeat;
   display: flex;
@@ -364,6 +361,10 @@ h2 {
 .stat .number {
   margin-top: 3.7rem;
   margin-left: 1rem;
+}
+
+.titre-exp h2 {
+  color: #1A1423;
 }
 
 .competences {
@@ -550,6 +551,7 @@ h2 {
 .Portfolio {
   width: 100%;
   display: flex;
+  margin-bottom: 1rem;
 }
 .Portfolio .Portfolio-media {
   width: 50%;

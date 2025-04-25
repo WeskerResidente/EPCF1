@@ -1,74 +1,64 @@
 @use "../abstracts/variables" as variable;
 
-// Header général
+
 header {
     background-color: variable.$color-primary;
-    position: relative; // nécessaire pour le positionnement absolu du menu mobile
+    position: relative;
+
   }
-  
-  // Container flex pour logo + menu
-  header .container .flex {
+  .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  header .container .flex {
+
     align-items: center;
     padding: 0.5rem 1rem;
   }
-  
-  // Bouton burger (hidden par défaut)
+  .flex {
+    width: 50%;
+  }
   .menu-toggle {
-    display: none;
-    position: absolute;
-    top: 3rem;
-    right: 15rem;
+    // display: block;
+    // position: absolute;
+    margin-top: 3rem;
+    // right: 15rem;
     cursor: pointer;
     font-size: 4rem;
-    color: variable.$color-white;
-    background: none;
-    border: none;
-    z-index: 1001;
+    // color: variable.$color-white;
+    // background: none;
+    // border: none;
+    // z-index: 1001;
     .fa-solid {
         color: variable.$color-white;
       }
   }
 
-  // Menu principal inline desktop
+ 
   header .container .flex ul {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 2rem;
     list-style: none;
     margin: 0;
     padding: 0;
   }
+  header .container .flex ul.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: variable.$color-primary;
+    padding: 1rem 0;
+    gap: 1rem;
+    z-index: 1000;
+}
   header .container .flex ul a {
     text-decoration: none;
     color: variable.$color-white;
     font-family: "montserrat bold";
   }
   
-  // Responsive : burger visible, menu caché, et menu ouvert en colonne
-  @media (max-width: 1000px) {
-    // Affiche le burger
-    .menu-toggle {
-      display: block;
-    }
-  
-    // Cache le menu principal
-    header .container .flex ul {
-      display: none;
-    }
-  
-    // Affiche le menu en mobile quand la classe .open est ajoutée
-    header .container .flex ul.open {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: variable.$color-primary;
-      padding: 1rem 0;
-      gap: 1rem;
-      z-index: 1000;
-    }
-  }

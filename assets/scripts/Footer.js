@@ -1,4 +1,3 @@
-//script footer formulaire
 const formulaire = document.querySelector('#contactform');
 
 formulaire.addEventListener('submit', function(e) {
