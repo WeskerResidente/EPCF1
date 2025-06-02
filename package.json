@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "sass": "sass -w assets/scss:assets/css"
+    "sass": "sass -w assets/scss:assets/css"
   },
-
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "lfs": "^0.0.4",
     "sass": "^1.86.3"
   }
 }
